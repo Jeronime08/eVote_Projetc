@@ -1,0 +1,165 @@
+/*  Style global  */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8fafc;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/*  Containers  */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-card, .login-card {
+    background: #fff;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.title {
+    text-align: center;
+    color: #008037;
+}
+
+.subtitle {
+    text-align: center;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+/*  Formulaires  */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*  Boutons  */
+.btn-primary {
+    background-color: #008037;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #00662c;
+}
+
+.btn-secondary {
+    background-color: #0077b6;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background-color: #005b8a;
+}
+
+/*  Liens  */
+.links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.links a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+/*  Vote  */
+.vote-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.candidats-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.candidat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.candidat-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/*  Admin  */
+.admin-section {
+    padding: 2rem;
+}
+
+.admin-panel {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f0f0f0;
+}
+
+/*  Résultats  */
+.result-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.chart-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}

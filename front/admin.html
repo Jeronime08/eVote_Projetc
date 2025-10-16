@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - eVote Bénin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>👩‍💼 Espace Administrateur - eVote Bénin</h1>
+        <a href="index.html" class="btn-secondary">Déconnexion</a>
+    </header>
+
+    <main class="admin-section">
+        <section class="admin-panel">
+            <h2>Ajouter un candidat</h2>
+            <form id="formCandidat">
+                <label for="nomCandidat">Nom du candidat</label>
+                <input type="text" id="nomCandidat" name="nomCandidat" required>
+
+                <label for="parti">Parti politique</label>
+                <input type="text" id="parti" name="parti" required>
+
+                <label for="photo">Photo du candidat</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                <button type="submit" class="btn-primary">Ajouter</button>
+            </form>
+        </section>
+
+        <section class="admin-panel">
+            <h2>Gestion des électeurs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Email</th>
+                        <th>Ville</th>
+                        <th>Département</th>
+                        <th>NPI</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Les électeurs s’afficheront ici -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
