@@ -1,4 +1,5 @@
-$username = 'root';
+<?php 
+    $username = 'root';
 $host = 'localhost';
 $mdp = '';
 $dbname = 'evote_db.sql';
@@ -12,6 +13,7 @@ try {
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
+?>
 
 
 
