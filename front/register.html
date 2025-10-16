@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - eVote Bénin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <h1 class="title">🗳️ eVote Bénin</h1>
+            <h2 class="subtitle">Inscription de l’électeur</h2>
+
+            <form id="registerForm">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre adresse email" required>
+
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" placeholder="Créez un mot de passe" required>
+
+                <label for="confirm_password">Confirmer le mot de passe</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmez le mot de passe" required>
+
+                <label for="ville">Ville</label>
+                <input type="text" id="ville" name="ville" placeholder="Entrez votre ville" required>
+
+                <label for="departement">Département</label>
+                <input type="text" id="departement" name="departement" placeholder="Entrez votre département" required>
+
+                <button type="submit" class="btn-primary">S’inscrire</button>
+            </form>
+
+            <div class="links">
+                <a href="index.html">Déjà inscrit ? Connectez-vous</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
