@@ -1,9 +1,8 @@
 <?php 
-    $username = 'root';
+$username = 'root';
 $host = 'localhost';
 $mdp = '';
-$dbname = 'evote_db.sql';
-$pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $mdp);
+$dbname = 'evote_db';
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $mdp);
     // Configurations PDO
