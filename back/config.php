@@ -1,19 +1,20 @@
-<?php 
-$username = 'root';
-$host = 'localhost';
-$mdp = '';
-$dbname = 'evote_db';
+
+
+
+
+
+<?php
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $mdp);
-    // Configurations PDO
+    $host = "localhost";
+    $dbname = "evote_db";
+    $username = "root";
+    $password = "";
+
+    // Connexion avec $pdo, comme dans ton ancien code
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-    echo "Connected successfully";
-} catch (PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
+
+} catch (\Throwable $th) {
+    die("Erreur de connexion à la base de données : " . $th->getMessage());
 }
 ?>
-
-
-
-

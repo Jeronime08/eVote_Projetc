@@ -12,7 +12,7 @@
             <h1 class="title">🗳️ eVote Bénin</h1>
             <h2 class="subtitle">Connexion</h2>
 
-            <form id="loginForm">
+            <form id="loginForm" action="../back/index.php" method="post">
                 <label for="identifiant">Identifiant (Email ou NPI)</label>
                 <input type="text" id="identifiant" name="identifiant" placeholder="Entrez votre identifiant" required>
 
@@ -23,12 +23,11 @@
             </form>
 
             <div class="links">
-                <a href="register.html">Créer un compte électeur</a><br>
+                <a href="vote.html">Espace de vote</a><br>
                 <a href="admin.html">Admin ? Accédez à votre espace</a>
             </div>
         </div>
     </div>
 
-    <script src="js/main.js"></script>
-</body>
+    
 </html>
